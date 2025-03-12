@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+.active{
+    background: #FF1F3D;
+    color: #fff;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <nav class="w-11/12 mx-auto py-5 flex justify-between items-center border-b-2  border-[#17171733]">
+            <div class="logo"><img class="w-[120px]" src="Logo.png" alt=""></div>
+            <div class="sort"><button class="px-7 py-2 bg-[#25252533] rounded">Sort by view</button></div>
+            <div class="blog"><button class="bg-[#FF1F3D] px-5 py-2 rounded text-white">Blog</button></div>
+        </nav>
+    </header>
+
+    <nav id="catagori-container" class="flex justify-center py-5 gap-5"> 
+        <button onclick="loadVideos();" class="btn btn-sm bg-[#FF1F3D] text-white">All</button>
+    </nav>
+
+    <section id="video-container" class="w-11/12 mx-auto grid grid-cols-4 gap-5">
+
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
